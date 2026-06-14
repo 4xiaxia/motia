@@ -15,7 +15,7 @@
   "dependencies": {
     "@motiadev/core": "workspace:*",
     "amqplib": "^0.10.4",
-    "uuid": "^11.1.0"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@types/amqplib": "^0.10.5",
