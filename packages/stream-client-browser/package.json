@@ -13,7 +13,7 @@
     "lint": "eslint --config ../../eslint.config.js"
   },
   "dependencies": {
-    "uuid": "^13.0.0",
+    "uuid": "^14.0.0",
     "@motiadev/stream-client": "workspace:*"
   },
   "devDependencies": {
