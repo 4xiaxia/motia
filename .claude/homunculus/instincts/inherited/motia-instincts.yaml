@@ -1,0 +1,300 @@
+# Instincts generated from https://github.com/4xiaxia/motia
+# Generated: 2026-07-21T14:41:28.444Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: motia-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/motia
+---
+
+# Motia Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the npm_and_yarn group across 2 directories with 12 updates
+
+---
+id: motia-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/motia
+---
+
+# Motia Commit Length
+
+## Action
+
+Write moderate-length commit messages (~77 characters)
+
+## Evidence
+
+- Average commit message length: 77 chars
+- Based on 1 commits
+
+---
+id: motia-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/motia
+---
+
+# Motia Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: motia-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/motia
+---
+
+# Motia Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: motia-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/motia
+---
+
+# Motia Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: motia-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/motia
+---
+
+# Motia Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: motia-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: motia-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: motia-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: motia-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: motia-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: motia-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: motia-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Git Commit Format
+
+## Action
+
+Use the conventional commit format with a prefix (e.g., chore:)
+
+## Evidence
+
+- Seen in commit: chore(deps): bump the npm_and_yarn group across 2 directories with 12 updates
+- Pattern in commits.prefixes: ["chore"]
+
+---
+id: motia-instinct-monorepo-packages
+trigger: "When adding a new module or package"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Monorepo Packages
+
+## Action
+
+Place it under the packages/ directory
+
+## Evidence
+
+- Pattern in folderStructure.commonFolders: ["packages"]
+- Pattern in configFiles: packages/*/package.json
+
+---
+id: motia-instinct-test-location
+trigger: "When creating new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: 4xiaxia/motia
+---
+
+# Motia Instinct Test Location
+
+## Action
+
+Place tests in a separate location from source code
+
+## Evidence
+
+- Pattern in folderStructure.testLocation: separate
+
